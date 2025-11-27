@@ -13,4 +13,5 @@ services:
       TITLE: "My KoShelf library" # Optional
       # DOCSETTINGS: /docsettings # Optional
       # HASHDOCSETTINGS: /hashdocsettings # Optional
+      # INCLUDE_UNREAD: "true"
     restart: unless-stopped
