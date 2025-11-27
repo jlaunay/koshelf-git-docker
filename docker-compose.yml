@@ -1,13 +1,3 @@
-## koshelf-git-docker
-
-Unofficial Docker image for git version of [KoShelf](https://github.com/paviro/KoShelf). \
-
----
-### Edit Docker Compose
-
-Edit the given compose file to fit your needs (HASHDOCSETTINGS etc.)
-
-```yaml
 services:
   koshelf:
     container_name: koshelf-git
@@ -24,13 +14,3 @@ services:
       # DOCSETTINGS: /docsettings # Optional
       # HASHDOCSETTINGS: /hashdocsettings # Optional
     restart: unless-stopped
-```
-
-Then pull, build and run
-
-```sh
-docker compose pull
-docker compose up -d --build
-```
-```
-```
