@@ -1,6 +1,6 @@
 ## koshelf-git-docker
 
-Unofficial Docker image for git version of [KoShelf](https://github.com/paviro/KoShelf). \
+Unofficial Docker image for git version of [KoShelf](https://github.com/paviro/KoShelf).
 
 ---
 ### Edit Docker Compose
