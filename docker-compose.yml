@@ -8,12 +8,18 @@ services:
       - $SYNCTHING_DIR/books:/books
       - $SYNCTHING_DIR/stats:/settings
       # map to empty to ignore syncthing folders
-      - $SYNCTHING_DIR/books/.stversions
-      - $SYNCTHING_DIR/books/.stfolder
-      - $SYNCTHING_DIR/hashdocsettings/.stversions
-      - $SYNCTHING_DIR/hashdocsettings/.stfolder
+      - /books/.stversions
+      - /books/.stfolder
+      - /settings/.stversions
+      - /settings/.stfolder
+      # If using HASHDOCSETTINGS uncomment the 3 following lines
       # - $SYNCTHING_DIR/hashdocsettings:/hashdocsettings # Optional
+      # - /hashdocsettings/.stversions
+      # - /hashdocsettings/.stfolder
+      # If using DOCSETTINGS uncomment the 3 following lines
       # - $SYNCTHING_DIR/docsettings:/docsettings # Optional
+      # - /hashdocsettings/.stversions
+      # - /hashdocsettings/.stfolder
     environment:
       TITLE: "My KoShelf library" # Optional, default "My KoShelf library"
       # SYNCTHING_DIR: /path/to/syncthing/root/dir
