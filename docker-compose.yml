@@ -10,8 +10,11 @@ services:
       # - $SYNCTHING_DIR/hashdocsettings:/hashdocsettings # Optional
       # - $SYNCTHING_DIR/docsettings:/docsettings # Optional
     environment:
-      TITLE: "My KoShelf library" # Optional
-      # DOCSETTINGS: /docsettings # Optional
-      # HASHDOCSETTINGS: /hashdocsettings # Optional
-      # INCLUDE_UNREAD: "true"
+      TITLE: "My KoShelf library" # Optional, default "My KoShelf library"
+      # SYNCTHING_DIR: /path/to/syncthing/root/dir
+      # for users who store metadata separatel enable one of DOC or HASHDOC SETSINGS below
+      # DOCSETTINGS: /docsettings # Optional, Path to KOReader's docsettings folder
+      # HASHDOCSETTINGS: /hashdocsettings # Optional, Path to KOReader's hashdocsettings folder
+      # INCLUDE_UNREAD: "true" # Optional, default false, Include unread books (EPUBs without KoReader metadata)
+      # INCLUDE_ALL_STATS: "true" # Optional, default false, include statistics for all books in the database, regardless of whether they exist in your library
     restart: unless-stopped
