@@ -7,6 +7,11 @@ services:
     volumes:
       - $SYNCTHING_DIR/books:/books
       - $SYNCTHING_DIR/stats:/settings
+      # map to empty to ignore syncthing folders
+      - $SYNCTHING_DIR/books/.stversions
+      - $SYNCTHING_DIR/books/.stfolder
+      - $SYNCTHING_DIR/hashdocsettings/.stversions
+      - $SYNCTHING_DIR/hashdocsettings/.stfolder
       # - $SYNCTHING_DIR/hashdocsettings:/hashdocsettings # Optional
       # - $SYNCTHING_DIR/docsettings:/docsettings # Optional
     environment:
