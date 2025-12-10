@@ -6,6 +6,7 @@ CMD="/koshelf --books-path /books --statistics-db /settings/statistics.sqlite3 -
 [ -n "$DOCSETTINGS" ] && CMD="$CMD --docsettings-path $DOCSETTINGS"
 [ -n "$HASHDOCSETTINGS" ] && CMD="$CMD --hashdocsettings-path $HASHDOCSETTINGS"
 [ -n "$TITLE" ] && CMD="$CMD --title \"$TITLE\""
+[ "$INCLUDE_ALL_STATS" = "true" ] && CMD="$CMD --include-all-stats"
 [ "$INCLUDE_UNREAD" = "true" ] && CMD="$CMD --include-unread"
 
-eval exec $CMD
+eval exec "$CMD"
