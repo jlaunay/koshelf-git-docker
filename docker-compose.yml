@@ -22,6 +22,8 @@ services:
       # - /hashdocsettings/.stfolder
     environment:
       TITLE: "My KoShelf library" # Optional, default "My KoShelf library"
+      # LANG: "en_US" # Optional, default en_US, Language for UI translations
+      # TIMEZONE: "Australia/Sydney" # Optional, default to system local
       # SYNCTHING_DIR: /path/to/syncthing/root/dir
       # for users who store metadata separatel enable one of DOC or HASHDOC SETSINGS below
       # DOCSETTINGS: /docsettings # Optional, Path to KOReader's docsettings folder
