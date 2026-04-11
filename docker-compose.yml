@@ -28,6 +28,7 @@ services:
       # for users who store metadata separatel enable one of DOC or HASHDOC SETSINGS below
       # DOCSETTINGS: /docsettings # Optional, Path to KOReader's docsettings folder
       # HASHDOCSETTINGS: /hashdocsettings # Optional, Path to KOReader's hashdocsettings folder
+      # DATAPATH: path to /koshelf/data
       # INCLUDE_UNREAD: "true" # Optional, default false, Include unread books (EPUBs without KoReader metadata)
       # INCLUDE_ALL_STATS: "true" # Optional, default false, include statistics for all books in the database, regardless of whether they exist in your library
     restart: unless-stopped

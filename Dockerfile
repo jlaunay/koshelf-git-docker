@@ -15,6 +15,8 @@ WORKDIR /src
 
 RUN git clone --depth 1 https://github.com/paviro/KoShelf.git .
 
+RUN cargo install cargo-about
+
 RUN cargo +nightly build --release
 
 FROM debian:12-slim
